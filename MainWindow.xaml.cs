@@ -25,7 +25,6 @@ namespace Serving
 
         string[] timeCombo;
         Reservation bokning;
-        AsyncCooking recept;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,11 +34,6 @@ namespace Serving
             bokning = new Reservation();
 
             FirstList();
-
-            recept = new AsyncCooking();
-
-            //För Async Recept
-            receptListBox.ItemsSource = recept.ReceptView();
         }
 
         private void bokaButton_Click(object sender, RoutedEventArgs e)
@@ -182,11 +176,6 @@ namespace Serving
             }
             string[] newList = reservationsLista.Split('\n');
             mainListBox.ItemsSource = newList;
-        }
-
-        private async void cookingButton_Click(object sender, RoutedEventArgs e)
-        {
-            recept.MatLagning();
         }
     }
 }

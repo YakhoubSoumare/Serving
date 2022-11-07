@@ -121,7 +121,7 @@
 
             </Grid>
         </TabItem>
-        <TabItem Header="Asynkron: Måltidens steg">
+        <!--<TabItem Header="Asynkron: Måltidens steg">
             <Grid Name="AsynkronGrid" Background="Aquamarine">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -153,7 +153,7 @@
                 </StackPanel>
                 
             </Grid>
-        </TabItem>
+        </TabItem>-->
     </TabControl>
     
     
